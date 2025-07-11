@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.fas {
+    margin-right: 5px; 
+}
+
+.meal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.meal-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.meal-card:hover {
+    transform: translateY(-5px);
+}
+
+.meal-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.meal-card h3 {
+    margin: 15px 10px 5px;
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+
+.meal-card p {
+    margin: 0 10px 15px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
